@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu aniversário</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,21 +16,24 @@
 <body>
     <main class="main">
         <div class="container">
-            <img src="./images/image_2023-12-14_200703054.png" alt="Foto do autor da página">
-        <div class="main__description">
-            <h1 class="main__description__title">
+            <img src="./images/image_2023-12-14_200703054.png" alt="Foto do autor da página"  data-aos="zoom-in">
+        <div class="main__description" data-aos="zoom-in">
+            <h1 class="main__description__title" >
                 Pedro Santos
             </h1>
             <p class="main__description__text"> 
                 Olá, criei esta pequena landing page para contar os dias 
-que faltam para o meu próximo aniversário, nela estou  usando a ferramenta Parcel,  a biblioteca AOS e entre outras ferramentas como sass, BEM, e claro treinando meu JavaScript este é o meu exercicío do módulo 22 do curso de Desenvolvimento Full-Stack java pela EBAC.
+que faltam para o meu próximo aniversário, se for antes ele vai indicar com conometro quanto tempo falta, se for o dia do meu aniversário, terá uma mensagem de parabéns, se já tiver passado terá uma mensagem avisando, nela estou  usando a ferramenta Parcel,  a biblioteca AOS e entre outras ferramentas como sass, BEM, e claro treinando meu JavaScript este é o meu exercicío do módulo 22 do curso de Desenvolvimento Full-Stack java pela EBAC.
             </p>
         </div>
         </div>
-        <span class="main__timer" id="timer">363 dias  23 horas 32 minutos e 41 segundos</span>
+        <div class="contador" data-aos="zoom-in-up">
+            <span class="main__timer" id="timer"></span>
+        </div>
     </main>
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
