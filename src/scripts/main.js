@@ -15,7 +15,7 @@ const contaHoras = setInterval(function(){
     const finalDia13 = new Date ("Dec 13 2024 23:00:00");
     const fim = finalDia13.getTime();
 
-    if (distanciaDoEvento > 0 && timeStampDoEvento < inicio && timeStampDoEvento > fim) {
+    if (distanciaDoEvento > 0) {
         const dias = 1000*60*60*24;
         const horas = 1000*60*60;
         const minutos = 1000*60;
@@ -29,7 +29,7 @@ const contaHoras = setInterval(function(){
     
         document.getElementById('timer').innerHTML = `${diasAteOEvento} dias ${horasAteOEvento} horas ${minutosAteOEvento} minutos ${segundosAteOEvento} segundos`;
     }
-    else if (timeStampDoEvento >= inicio && timeStampDoEvento <= fim){
+    else if (distanciaDoEvento <= 0 && timeStampAtual >= inicio && timeStampAtual <= fim){
         let emojis = "";
         // Usa um laço for para repetir o emoji 1 vez
         for (let i = 0; i < 1; i++) {
