@@ -12,7 +12,7 @@ const contaHoras = setInterval(function(){
 
     const inicio = timeStampDoEvento;
 
-    const finalDia13 = new Date ("Dec 13 2024 23:00:00");
+    const finalDia13 = new Date ("Dec 13 2024 23:59:59");
     const fim = finalDia13.getTime();
 
     if (distanciaDoEvento > 0) {
